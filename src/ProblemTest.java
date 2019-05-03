@@ -37,7 +37,7 @@ public class ProblemTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void shouldFindlDifference() {
+    public void shouldThrowExceptionForNonSupportedArray() {
         int[][] arr = {{1, 2, 9}};
         Problem.diagonalDifference(arr);
     }
